@@ -1,9 +1,22 @@
 <?php
-namespace App\Http\helpers;
 
-class Ecuacion{
+namespace App\Http\Helpers;
 
-    public function __construct(){
-        echo "soy la clase cuacion";
+class Ecuacion
+{
+    private float $a;
+    private float $b;
+
+    public function __construct(float $a, float $b)
+    {
+        $this->a = $a;
+        $this->b = $b;
+    }
+
+    public function resultado(): float
+    {
+        
+        $x = -($this->b / $this->a);
+        return $x;
     }
 }

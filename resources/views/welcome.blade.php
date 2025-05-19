@@ -11,12 +11,13 @@
         <ul>
             <li>
                 <h2> 
-                <a href="{{ route('Ecuacion.index') }}">Ecuacion</a>
+                <a href="{{ route('ecuacion.index') }}">Ecuacion</a>
+
                 </h2>
             </li>
             <li>
                 <h2>
-                    <a="#">Matrix</a>
+                <a href="{{ route('matrix.index') }}">Matrix</a>
                 </h2>
             </li>
         </ul>
